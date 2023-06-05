@@ -1,6 +1,7 @@
 {
     "scripts": {
         "test": "cypress run --browser chrome"
+        "posttest": "cypress run --reporter junit --reporter-options junit-report.xml"
     },
     "cypress-cucumber-preprocessor": {
         "step_definitions": "cypress/support/steps"
